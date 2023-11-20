@@ -1,0 +1,17 @@
+n=int(input())
+c=0
+l=list(map(int,input().split()))
+for i in range(0,n):#outerloop  i=0
+    count=0
+    for j in range(0,n):#innerloop
+        if l[i]==l[j]:#4==4
+            count=count+1#2
+    if count>1:
+        print(l[i],end=' ')
+        break
+n=int(input())
+l=list(map(int,input().split()))
+for i in l:
+    if l.count(i)>1:
+        print(i)
+        break
